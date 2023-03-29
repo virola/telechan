@@ -9,7 +9,6 @@ const about = () => async (ctx: Context) => {
 	debug(`Triggered "about" command with message \n${message}`);
 
 	await ctx.replyWithMarkdownV2(message, { parse_mode: 'Markdown' });
-	// return ctx.replyWithMarkdown(message);
 };
 
 export { about };

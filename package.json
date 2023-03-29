@@ -2,13 +2,13 @@
   "name": "telechan-message-send-bot-alterby-virola",
   "version": "2.0.1",
   "description": "功能简单的TG机器人",
-  "main": "src/index.ts",
+  "main": "api/index.ts",
   "author": "EasyChen",
   "homepage": "https://twitter.com/easychen",
   "scripts": {
-    "dev": "DEBUG=bot* dotenv -- nodemon -e ts -x ts-node src/index.ts",
-    "devWindows": "@powershell -Command $env:DEBUG='bot*';dotenv -- nodemon -e ts -x ts-node src/index.ts",
-    "build": "ncc build src/index.ts -o public -m",
+    "dev": "DEBUG=bot* dotenv -- nodemon -e ts -x ts-node src/lib/telegram.ts",
+    "devWindows": "@powershell -Command $env:DEBUG='bot*';dotenv -- nodemon -e ts -x ts-node src/lib/telegram.ts",
+    "build": "ncc build src/lib/telegram.ts -o public -m",
     "prettier": "prettier --single-quote --trailing-comma all --write 'src/**/*.ts'"
   },
   "dependencies": {
