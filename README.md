@@ -62,13 +62,7 @@ function tg_send(  $text , $desp = '' , $key = '<sendkey>'  )
 
 ## Thanks
 
-Heavily modified base [Telegram Bot Boilerplate with Vercel's Serverless Functions](https://github.com/waptik/telegram-bot-boilerplate-now-serverless-api)
-
-## 中文教程
-
-[![image](https://user-images.githubusercontent.com/1294760/115172022-f05da500-a0f6-11eb-9bb8-5919442523c6.png)](https://www.bilibili.com/video/BV1S5411c7Vy/)
-
-[安装视频@B 站，欢迎关注作者](https://www.bilibili.com/video/BV1S5411c7Vy/)
+参考项目： <https://github.com/m7mark/telegram-bot-vercel-boilerplate.git>
 
 参数说明：
 
