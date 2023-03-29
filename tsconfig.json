@@ -1,10 +1,14 @@
 {
-	"extends": "@sindresorhus/tsconfig",
-	"include": ["api"],
 	"compilerOptions": {
+		"strict": true,
+		"target": "esnext",
+		"moduleResolution": "node",
+		"module": "commonjs",
+		"skipLibCheck": true,
+		"sourceMap": true,
 		"outDir": "public",
-		"strict": false,
-		"strictNullChecks": false,
-		"sourceMap": true
-	}
+		"lib": ["esnext", "dom"],
+		"resolveJsonModule": true
+	},
+	"exclude": ["node_modules"]
 }

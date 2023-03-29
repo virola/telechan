@@ -1,9 +1,17 @@
 {
 	"version": 2,
-	"routes": [
+	"public": true,
+	"rewrites": [
 		{
-			"src": "/.*",
-			"dest": "api/index.ts"
+			"source": "/(.*)",
+			"destination": "api/index.ts"
+		}
+	],
+	"redirects": [
+		{
+			"source": "/",
+			"destination": "/api",
+			"permanent": false
 		}
 	]
 }
