@@ -1,5 +1,5 @@
 const md5 = require('md5');
-const VERCEL_URL = process.env.VERCEL_URL || '';
+const VERCEL_URL = process.env.DOMAIN_URL || process.env.VERCEL_URL || '';
 const TCKEY = process.env.TCKEY;
 
 const replyToMessage = (ctx: any, messageId: string, string: string) =>
@@ -20,8 +20,7 @@ const sendkey = () => (ctx: any) => {
 		ctx,
 		messageId,
 		`${userName} , Your sendkey is 🔑 ${sendkey} \n 
-  🚀 Use follow url to send message : \n 
-  ${site_url}/api/send?sendkey=<sendkey>&text=<text>`,
+  🚀 Use follow url to send message : \n ${site_url}/api/send?sendkey=<sendkey>&text=<text>`,
 	);
 };
 
